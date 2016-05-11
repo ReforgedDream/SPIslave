@@ -1,0 +1,30 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.0</VERSION>
+ <DEVICE>"ATmega16"</DEVICE>
+ <WORKING_DIR>C:\Data\Ёлектроника\Atmel Studio projects\SPIslave\SPIslave\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Data\Ёлектроника\Atmel Studio projects\SPIslave\SPIslave\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.98\avrasm\inc\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Data\Ёлектроника\Atmel Studio projects\SPIslave\SPIslave\Debug\SPIslave.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>SPIslave.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>SPIslave.map</FILE>
+  <FILE>SPIslave.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <Reset><FILE>C:\Data\Ёлектроника\Atmel Studio projects\SPIslave\SPIslave\main.asm</FILE><LINE>113</LINE></Reset>
+  <Flush><FILE>C:\Data\Ёлектроника\Atmel Studio projects\SPIslave\SPIslave\main.asm</FILE><LINE>118</LINE></Flush>
+  <Start><FILE>C:\Data\Ёлектроника\Atmel Studio projects\SPIslave\SPIslave\main.asm</FILE><LINE>191</LINE></Start>
+  <newData><FILE>C:\Data\Ёлектроника\Atmel Studio projects\SPIslave\SPIslave\main.asm</FILE><LINE>198</LINE></newData>
+ </LABELS>
+</ASSEMBLER_INFO>

@@ -191,27 +191,14 @@ UOUT SPDR, R16		//initial value
 Start:
 
 SBIC SPSR, SPIF	//If nothing is received...
-RJMP label1
+RJMP newData
 
-LDI R31, 0x5A	//...then store 0x5A (Z) in R31..
+RJMP Start		//...then loop
 
-RJMP Start		//...and loop
+newData:
+IN R16, SPDR	//Else read the new data
 
-label1:
-UIN R16, SPDR	//Else read the new data
-
-CPI R16, 0x64	//If new data is 0x64 (d)...
-BRNE label2
-LDI R31, 0x37	//...then reply 0x37 (7)
-
-label2:
-CPI R16, 0x69	//If new data is 0x69 (i)...
-BRNE label3
-LDI R31, 0x51	//...then reply 0x51 (Q)
-
-label3:
-MOV R16, R31	//Finally, get the reply
-UOUT SPDR, R16	//And send it for the next transmission
+OUT SPDR, R16	//And send it for the next transmission
 
 RJMP Start		//Go to start
 //End of Main Routine//
